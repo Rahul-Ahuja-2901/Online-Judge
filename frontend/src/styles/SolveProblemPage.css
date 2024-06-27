@@ -1,0 +1,127 @@
+.solve-problem-container {
+  display: flex;
+  padding: 20px;
+  height: 100vh; /* Ensure full viewport height */
+  box-sizing: border-box;
+}
+
+.left-panel {
+  width: 50%;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.right-panel-SolveProblemPage {
+  width: 50%;
+  padding-left: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+.problem-name {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.problem-difficulty {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.problem-statement {
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+}
+
+.problem-sample {
+  margin-bottom: 20px;
+}
+
+.problem-sample pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.problem-tags {
+  margin-bottom: 20px;
+}
+
+.language-select {
+  display: flex;
+  align-items: center; /* Align label and select on same line */
+  margin-bottom: 20px;
+}
+
+.language-select label {
+  margin-right: 10px;
+}
+
+.language-select select {
+  width: 150px; /* Adjust width */
+}
+
+.code-editor {
+  width: 100%;
+  height: 600px; /* Adjust height based on screen height minus padding and other elements */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  display: block;
+  width: 150px; /* Fixed width for button */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.verdict {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.verdict.accepted {
+  color: green;
+}
+
+.verdict.failed {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .solve-problem-container {
+    flex-direction: column; /* Stack panels on top of each other on smaller screens */
+  }
+
+  .left-panel, .right-panel {
+    width: 100%; /* Full width on smaller screens */
+    padding: 0;
+  }
+
+  .right-panel {
+    padding-top: 10px; /* Add space between top and code editor on smaller screens */
+  }
+
+  .code-editor {
+    height: 300px; /* Adjusted height for smaller screens */
+  }
+}

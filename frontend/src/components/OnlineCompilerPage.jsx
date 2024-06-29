@@ -22,7 +22,7 @@ const OnlineCompilerPage = () => {
 
   const handleRunCode = async () => {
     try {
-      const response = await axios.post('http://localhost:8080/run', {
+      const response = await axios.post('http://3.109.124.142:8080/run', {
         language,
         code,
         input,

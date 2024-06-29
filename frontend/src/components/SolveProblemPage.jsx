@@ -19,7 +19,7 @@ const SolveProblemPage = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post(`http://localhost:8080/submit`, { id:problem._id, code, language });
+      const response = await axios.post(`http://3.109.124.142:8080/submit`, { id:problem._id, code, language });
       setVerdict(response.data); // Assuming response.data contains the verdict string
     } catch (error) {
       console.error('Error submitting code:', error);

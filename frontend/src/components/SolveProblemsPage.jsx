@@ -11,7 +11,7 @@ const SolveProblemsPage = () => {
     const fetchProblems = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/get-all-problems"
+          "http://3.109.124.142:8080/get-all-problems"
         );
         setProblems(response.data);
       } catch (error) {

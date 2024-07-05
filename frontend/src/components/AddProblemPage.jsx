@@ -30,7 +30,7 @@ const AddProblem = () => {
 
     try {
       const response = await axios.post(
-        "http://3.109.124.142:8080/add-problem",
+        "http://backend.codeforces.site/add-problem",
         formData
       );
       setResponseMessage(response.data);
